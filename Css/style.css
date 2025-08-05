@@ -1,12 +1,33 @@
 /* Reset & Base Styles */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+}
+
+:root {
+	--primary-blue: #0d2d45;
+	--dark-pink: #ff6961;
+	--light-pink: #fedcb8;
+
+	--shadow-light: rgba(0, 0, 0, 0.08);
+	--shadow-strong: rgba(0, 0, 0, 0.15);
+	--background-light: #fdf8ef;
+
+  --background-color: #0071b8;
+}
+
+@font-face {
+	font-family: "Poppins";
+	src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Header Contact Section */
@@ -24,7 +45,7 @@ body {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background-color: #0071b8;
+  background-color: var(--background-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,6 +57,8 @@ body {
   font-size: 16px;
   color: #212529;
 }
+/* Header Contact Section */
+
 
 /* Navbar Styles */
 .navbar-custom {
@@ -103,6 +126,8 @@ body {
 .btn-estimate:hover {
   background-color: #e6e6e6;
 }
+/* Navbar Styles */
+
 
 /* Hero Section */
 .hero-section {
