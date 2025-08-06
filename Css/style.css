@@ -124,7 +124,8 @@ body {
 }
 
 .btn-estimate:hover {
-  background-color: #e6e6e6;
+  background-color: #005a9c;
+  color: white;
 }
 /* Navbar Styles */
 
@@ -198,7 +199,7 @@ body {
   max-width: 450px;
   text-align: left;
 }
-
+/* 
 .dropdown-toggle::after {
   content: "";
   position: absolute;
@@ -212,7 +213,41 @@ body {
   background-repeat: no-repeat;
   pointer-events: none;
   border: none !important;
+} */
+.select-services::after{
+    content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("../Images/right-arrow.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  border: none !important;
+  
 }
+
+/* Default (Desktop) */
+.hero-section-inner-text input[type="text"],
+.hero-section-inner-text .select-services,
+.hero-section-inner-text button {
+  width: 100%;
+  max-width: 450px;
+  margin: 0 auto;
+  display: block;
+}
+/* Apply 100% width only when needed */
+.hero-section .dropdown-menu {
+  width: 100%;
+  min-width: unset;
+  box-sizing: border-box;
+  max-width: 450px; /* restricts width on large screens */
+  margin: 0 auto;   /* center align */
+}
+
 
 /* ========== Responsive ========== */
 

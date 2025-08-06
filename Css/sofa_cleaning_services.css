@@ -33,5 +33,123 @@
 }
 .sofa-cleaning-services-left-image {
   margin-bottom: 10px;
+}
+.sofa-cleaning-services-left-image img {
+  width: 100%;
+  height: auto;
+border-radius: 15% 15% 0 0;
+
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1024px) {
+  .sofa-cleaning-services {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 20px;
+    max-height: none;
+  }
+
+  .sofa-cleaning-services-left,
+  .sofa-cleaning-services-right {
+    width: 100%;
+  }
+
+  .sofa-cleaning-services-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sofa-cleaning-services-left > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 15px; */
+  }
+
+  .sofa-cleaning-services-left img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+  }
+
+  .sofa-cleaning-services-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sofa-cleaning-services-right-first-para,
+  .sofa-cleaning-services-right-second-para {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .sofa-cleaning-services {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 20px;
+    max-height: none;
+  }
+
+  .sofa-cleaning-services-left,
+  .sofa-cleaning-services-right {
+    width: 100%;
+  }
+
+  .sofa-cleaning-services-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sofa-cleaning-services-left > div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 15px; */
+  }
+
+  .sofa-cleaning-services-left img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+  }
+
+  .sofa-cleaning-services-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .sofa-cleaning-services-right-first-para,
+  .sofa-cleaning-services-right-second-para {
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  .sofa-cleaning-services h2 {
+    font-size: 24px;
+  }
+
+  .sofa-cleaning-services p {
+    font-size: 14px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 8px 16px;
+    width: 100%;
+    max-width: 300px;
+  }
 }
