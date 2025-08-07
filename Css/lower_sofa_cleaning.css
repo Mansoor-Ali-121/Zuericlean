@@ -1,0 +1,33 @@
+.lower-sofa-cleaning{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+    background-color: #0071b80d;
+    border-radius: 10px;
+    gap: 33px;
+    /* flex-wrap: wrap; */
+
+}
+.lower-sofa-cleaning-services-left{
+    padding: 45px;
+    width: 927px;
+}
+.lower-sofa-cleaning-services-left h3{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
+}
+.lower-sofa-cleaning-services-left p{
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.lower-sofa-cleaning-services-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}

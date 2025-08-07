@@ -1,0 +1,123 @@
+.all-services-in-switzerland {
+  padding: 31px 0 31px 0;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* height: 960px; */
+}
+.all-services-in-switzerland h3 {
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 45px;
+  margin-bottom: 20px;
+}
+
+.services-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 80%; /* 3 x 300px + gaps */
+  margin: 0 auto;
+}
+
+.service-box {
+  position: relative;
+  flex: 1 1 calc(33.33% - 16px);
+  max-width: calc(33.33% - 16px);
+  min-width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f3f9fc;
+  border-bottom: 2px solid #0071B8;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  overflow: hidden;
+}
+
+/* Content remains above animation */
+.service-text,
+.service-arrow {
+  position: relative;
+  z-index: 2;
+}
+
+.service-text {
+  padding: 12px 16px;
+  /* flex-grow: 1; */
+}
+
+.service-arrow {
+  background-color: #0071B8;
+  color: #fff;
+  padding: 10px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+
+/* Animated border as a bar behind content */
+.service-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 4px; /* initial left border */
+  background-color: #0071B8;
+  z-index: 1;
+  transition: width 0.6s ease-in-out;
+}
+
+/* On hover, border expands from left to full width */
+.service-box:hover::before {
+  width: 100%;
+}
+
+/* Optional: text color change on hover */
+.service-box:hover {
+  color: #fff;
+}
+/* Tablet Devices (≤ 992px) – 2 columns */
+@media (max-width: 992px) {
+  .service-box {
+    flex: 1 1 calc(50% - 16px);
+    max-width: calc(50% - 16px);
+  }
+    .all-services-in-switzerland h3 {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+}
+
+/* Mobile Devices (≤ 600px) – 1 column */
+@media (max-width: 600px) {
+  .service-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  .all-services-in-switzerland h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .service-arrow {
+    padding: 10px 16px; /* Reduce padding for smaller screens */
+    font-size: 24px;
+  }
+
+  .service-text {
+    padding: 10px 12px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .all-services-in-switzerland h3 {
+    font-size: 25px;
+    line-height: 32px;
+  }
+}

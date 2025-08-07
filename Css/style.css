@@ -5,6 +5,12 @@
 	border: none;
 	outline: none;
 	box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 :root {
@@ -331,7 +337,7 @@ body {
   }
 
   .header-title {
-    font-size: 24px;
+    font-size: 35px;
   }
 
   .hero-section-inner-section img {

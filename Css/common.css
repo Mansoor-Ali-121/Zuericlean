@@ -1,7 +1,18 @@
 .btn-background-color{
+ padding: 10px 15px;
     background-color: #0071b8;
-    color: white;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.btn-background-color:hover{
+    background-color: white !important;
+    color: #0071b8 !important;
+    border: 1px solid #0071b8 !important;
 }
 .txt-background-color{
-    color: #0071b8;
+    color: #0071b8 !important;
 }
