@@ -11,8 +11,9 @@
 .btn-background-color:hover{
     background-color: white !important;
     color: #0071b8 !important;
-    border: 1px solid #0071b8 !important;
+    /* border: 1px solid #0071b8 !important; */
+    outline: 1px solid #0071b8 !important;
 }
 .txt-background-color{
     color: #0071b8 !important;
-}
+}   
