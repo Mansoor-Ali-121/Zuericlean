@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 40px;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   border-radius: 10px;
   /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
   gap: 20px;
@@ -13,12 +13,20 @@
 .terrace-cleaner-left {
   padding: 45px;
 }
+.terrace-cleaner-right{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px
+}
 
 .terrace-cleaner-right h3 {
   font-size: 35px;
   font-weight: 600;
   /* margin-bottom: 20px; */
   line-height: 45px;
+  align-self: flex-start;
 }
 
 .terrace-cleaner p {
@@ -55,55 +63,47 @@
 .terrace-cleaner-right button:hover {
   background-color: #005a9c;
 }
-@media (max-width: 1024px) {
-  .terrace-cleaner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .terrace-cleaner-left {
-    padding: 0;
-  }
-
-  .terrace-cleaner-right {
-    margin-top: 20px;
-  }
+/* Desktop view - default */
+.lower-sofa-cleaning, .terrace-cleaner {
+  display: flex;
+  gap: 20px;
+  padding: 40px;
 }
 
+/* Medium screens (tablets, below 768px) */
 @media (max-width: 768px) {
-  .terrace-cleaner {
+  .lower-sofa-cleaning, .terrace-cleaner {
     flex-direction: column;
+    padding: 30px 20px;
     text-align: center;
-  }
-
-  .terrace-cleaner-left {
-    padding: 0;
-  }
-
-  .terrace-cleaner-right {
-    margin-top: 20px;
-  }
-}
-@media (max-width: 480px) {
-  .terrace-cleaner {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .terrace-cleaner-left {
-    padding: 0;
   }
 
   .terrace-cleaner-left img {
     width: 100%;
-  }
-  .terrace-cleaner-right {
-    margin-top: 20px;
-  }
-  .terrace-cleaner-right h3 {
-    font-size: 20px;
-    /* font-weight: 800; */
+    height: auto;
     margin-bottom: 20px;
-    line-height: 35px;
   }
 }
+
+/* Small screens (mobile, below 480px) */
+@media (max-width: 480px) {
+  .lower-sofa-cleaning, .terrace-cleaner {
+    padding: 20px 10px;
+  }
+
+  .terrace-cleaner-right h3 {
+      font-size: 25px;
+    text-align: center;
+    line-height: 32px;
+  }
+
+  .terrace-cleaner p {
+    font-size: 14px;
+  }
+
+  .terrace-cleaner button {
+    /* width: 100%; */
+    font-size: 16px;
+  }
+}
+

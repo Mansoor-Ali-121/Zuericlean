@@ -1,0 +1,99 @@
+.why-choose-zuericlean{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    border-radius: 10px;
+    /* margin: 20px */
+}
+.why-choose-zuericlean h3{
+    text-align: center;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    /* margin-bottom: 20px; */
+    /* width: 273px; */
+    /* text-align: center; */
+}
+.why-choose-zuericlean .para{
+    /* text-align: center; */
+    width: 1300px;
+    font-weight: 300;
+    font-size: 16px;
+}
+.why-choose-zuericlean h4{
+    font-size: 18px;
+    font-weight: 700;
+    width: 273px;
+    text-align: center;
+}
+.why-choose-card-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    border-radius: 10px;
+    /* margin: 20px */
+
+
+}
+.card-section{
+    background-color:#0071B80D;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* height: 363px; */
+    border-radius: 26px;
+    /* margin: 20px */
+        width: 321px;
+    height: 297px;
+    box-shadow: 0px 0px 10px #00000040;
+    position: relative;
+}
+.card-section p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 27px;
+    width: 273px;
+    /* margin-bottom: 20px; */
+    /* width: 273px; */
+    /* text-align: center; */
+}
+.card-section .card-icon{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #0071b8;
+    border-radius: 50%;
+    width: 86px;
+    height: 86px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    box-shadow: 0px 0px 10px #00000040;
+}
+.why-choose-card-section .card-center{
+    background-color: #0071b8;
+}
+.why-choose-card-section .card-center {
+    color: white;
+}
+
+.why-choose-card-section .card-center .card-icon{
+    background-color: white;
+}

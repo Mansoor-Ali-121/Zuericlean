@@ -1,10 +1,10 @@
 /* Reset & Base Styles */
 * {
-	margin: 0px;
-	padding: 0px;
-	border: none;
-	outline: none;
-	box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
   text-decoration: none;
   list-style: none;
 }
@@ -14,22 +14,22 @@ a {
 }
 
 :root {
-	--primary-blue: #0d2d45;
-	--dark-pink: #ff6961;
-	--light-pink: #fedcb8;
+  --primary-blue: #0d2d45;
+  --dark-pink: #ff6961;
+  --light-pink: #fedcb8;
 
-	--shadow-light: rgba(0, 0, 0, 0.08);
-	--shadow-strong: rgba(0, 0, 0, 0.15);
-	--background-light: #fdf8ef;
+  --shadow-light: rgba(0, 0, 0, 0.08);
+  --shadow-strong: rgba(0, 0, 0, 0.15);
+  --background-light: #fdf8ef;
 
   --background-color: #0071b8;
 }
 
 @font-face {
-	font-family: "Poppins";
-	src: url("../fonts/Poppins-Regular.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -64,7 +64,6 @@ body {
   color: #212529;
 }
 /* Header Contact Section */
-
 
 /* Navbar Styles */
 .navbar-custom {
@@ -134,7 +133,6 @@ body {
   color: white;
 }
 /* Navbar Styles */
-
 
 /* Hero Section */
 .hero-section {
@@ -220,8 +218,8 @@ body {
   pointer-events: none;
   border: none !important;
 } */
-.select-services::after{
-    content: "";
+.select-services::after {
+  content: "";
   position: absolute;
   right: 15px;
   top: 50%;
@@ -233,7 +231,6 @@ body {
   background-repeat: no-repeat;
   pointer-events: none;
   border: none !important;
-  
 }
 
 /* Default (Desktop) */
@@ -251,9 +248,8 @@ body {
   min-width: unset;
   box-sizing: border-box;
   max-width: 450px; /* restricts width on large screens */
-  margin: 0 auto;   /* center align */
+  margin: 0 auto; /* center align */
 }
-
 
 /* ========== Responsive ========== */
 
@@ -269,6 +265,9 @@ body {
 
   .hero-section {
     min-height: 600px;
+  }
+  .hero-section-inner-section img {
+    width: 30%;
   }
 
   .hero-section-inner-text {

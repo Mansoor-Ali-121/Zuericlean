@@ -34,14 +34,14 @@
   text-decoration: none;
   font-weight: 600;
   color: #000;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* Content remains above animation */
 .service-text,
 .service-arrow {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .service-text {
