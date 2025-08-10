@@ -37,7 +37,7 @@
   height: 100px;
   padding: 10px 10px;
   border-radius: 20px;
-    box-sizing: border-box; /* Includes padding inside width */
+  box-sizing: border-box; /* Includes padding inside width */
 }
 .city-box:hover {
   background-image: url("../Images/cities2.png");
