@@ -1,0 +1,140 @@
+.why-work-with-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  gap: 20px;
+}
+
+.why-work-with-us h3 {
+  font-size: 35px;
+  font-weight: 600;
+  /* margin-bottom: 20px; */
+  line-height: 45px;
+}
+
+.why-work-with-us p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: center;
+width: 1308px;
+height: 72px;
+}
+.why-work-with-us-card-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* flex-direction: column; */
+  gap: 70px;
+}
+.cards {
+  position: relative;
+  background-color: #eef8fd;
+  border-radius: 20px;
+  width: 280px;
+  padding: 20px 20px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  transition: background-color 0.3s;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.cards::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 100%;
+  background-color: #0071b8;
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transition: all 0.8s ease;
+  z-index: 0;
+}
+
+.cards:hover::before {
+  width: 100%;
+  border-radius: 0;
+}
+
+.cards:hover {
+  background-color: #0071b8;
+  color: #fff;
+}
+
+.cards * {
+  position: relative;
+  z-index: 1;
+}
+.cards:hover .card-icon {
+  background-color: #fff;
+}
+
+.cards:hover .card-icon img {
+  filter: invert(54%) sepia(93%) saturate(1200%) hue-rotate(183deg) brightness(65%) contrast(105%);
+}
+
+.heading-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-direction: column; */
+  gap: 12px;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  /* background-color: #0071b80d; */
+  width: 68px;
+  height: 68px;
+}
+.heading-icon .card-icon {
+  background-color: #0071b8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  align-items: center;
+  font-size: 24px;
+  color: white;
+  box-shadow: 0px 0px 10px #00000040;
+}
+.heading-icon .card-icon img {
+  height: 30px;
+  width: 25px;
+}
+.heading-icon h4 {
+  font-size: 14px;
+  font-weight: 700;
+  width: 82px;
+  height: 42px;
+  line-height: 21px;
+}
+.why-work-with-us-card-section .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  background-color: #0071b80d;
+  width: 281px;
+  height: 185px;
+}
+.cards p {
+  font-size: 12px;
+  /* line-height: 1.5;
+  margin-bottom: 20px; */
+  text-align: left;
+  height: 45px;
+  width: 177px;
+}

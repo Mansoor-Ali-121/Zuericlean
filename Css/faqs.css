@@ -1,0 +1,45 @@
+.faqs-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #0071B80D;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    /* gap: 20px; */
+  }
+  .faqs-section h3{
+    font-size: 35px;
+    font-weight: 600;
+    /* margin-bottom: 20px; */
+    line-height: 45px;
+  }
+  .faqs-section p{
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-weight: 300;
+  }
+.accordion-button{
+    /* background-color: #8cc0e22f !important; */
+    background-color: #e6f1f8;
+    margin-bottom: 3px;
+}
+.accordion-button:hover{
+    color: #0072b8 !important;
+}
+/* Hide Bootstrap default arrow icon */
+.accordion-button::after {
+  background-image: none !important; /* Remove the SVG arrow */
+  content: '+';                      /* Add your custom icon */
+  font-size: 20px;
+  color: #0071B8;
+  margin-left: auto;
+  transition: transform  0.3s ease;
+}
+
+/* When accordion is open, show minus sign */
+.accordion-button:not(.collapsed)::after {
+  content: '−'; /* Minus sign */
+}
