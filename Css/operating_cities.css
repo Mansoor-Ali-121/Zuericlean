@@ -75,49 +75,59 @@
 .city-box:hover .city-name {
   color: white;
 }
-/* Tablets (≤ 1024px) – 4 items per row */
+/* ---------- 1024px and below ---------- */
 @media (max-width: 1024px) {
   .city-box {
-    width: calc((100% - 60px) / 4); /* 3 gaps of 20px */
-  }
-}
-
-/* Mobile Landscape (≤ 768px) – 3 items per row */
-@media (max-width: 768px) {
-  .city-box {
-    width: calc((100% - 40px) / 3); /* 2 gaps of 20px */
-  }
-
-  .cities-container h3 {
-    font-size: 28px;
-    line-height: 38px;
+    width: calc((100% - 80px) / 4); /* 4 boxes per row */
+    height: 90px;
   }
 
   .city-name {
     font-size: 16px;
-  }
-}
-
-/* Mobile Portrait (≤ 480px) – 2 items per row */
-@media (max-width: 480px) {
-  .city-box {
-    width: calc((100% - 20px) / 2); /* 1 gap of 20px */
-    padding: 0px;
+    padding: 10px 15px;
   }
 
   .city-icon {
-    width: 35px;
-    height: 35px;
+    width: 36px;
+    height: 36px;
     font-size: 14px;
-    padding: 8px;
+  }
+}
+
+/* ---------- 768px and below ---------- */
+@media (max-width: 768px) {
+  .city-box {
+    width: calc((100% - 60px) / 3); /* 3 boxes per row */
+    height: 80px;
+  }
+
+  .city-name {
+    font-size: 15px;
+  }
+
+  .city-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 13px;
+  }
+}
+
+/* ---------- 480px and below ---------- */
+@media (max-width: 480px) {
+  .city-box {
+    width: calc((100% - 20px) / 2); /* 2 boxes per row */
+    height: 75px;
   }
 
   .city-name {
     font-size: 14px;
+    padding: 8px 12px;
   }
 
-  .cities-container h3 {
-    font-size: 22px;
-    line-height: 30px;
+  .city-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 12px;
+    padding: 8px;
   }
 }

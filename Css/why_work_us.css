@@ -138,3 +138,103 @@ height: 72px;
   height: 45px;
   width: 177px;
 }
+
+
+/* ------------ 1024px and below ------------ */
+@media (max-width: 1024px) {
+  .why-work-with-us p {
+    width: 100%;
+    height: auto;
+    font-size: 15px;
+  }
+
+  .why-work-with-us-card-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .cards {
+    width: 260px;
+    height: auto;
+  }
+
+  .cards p {
+    width: 100%;
+  }
+}
+
+/* ------------ 768px and below ------------ */
+@media (max-width: 768px) {
+  .why-work-with-us {
+    padding: 30px 20px;
+  }
+
+  .why-work-with-us h3 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .why-work-with-us p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .why-work-with-us-card-section {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .cards {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+  }
+
+  .cards p {
+    font-size: 13px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .heading-icon {
+    width: auto;
+    justify-content: flex-start;
+  }
+}
+
+/* ------------ 480px and below ------------ */
+@media (max-width: 480px) {
+  .why-work-with-us h3 {
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+  }
+
+  .why-work-with-us p {
+    font-size: 13px;
+  }
+
+  .cards {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .heading-icon {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .heading-icon h4 {
+    font-size: 13px;
+    width: auto;
+    height: auto;
+  }
+
+  .cards p {
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    height: auto;
+  }
+}

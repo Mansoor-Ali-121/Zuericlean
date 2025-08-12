@@ -1,0 +1,162 @@
+.blogs-section {
+  padding: 40px;
+  text-align: center;
+  height: 525px;
+}
+.blogs-section h3 {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 45px;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.blog-card-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  /* Remove gap and use margin on cards */
+}
+
+.blog-card {
+  flex: 0 0 calc(25% - 15px); /* 15px is approx margin to adjust */
+  box-sizing: border-box;
+  padding: 10px;
+  border-radius: 8px;
+  margin-right: 20px; /* space between cards */
+}
+
+/* Remove margin from last card so no extra space on right */
+.blog-card:last-child {
+  margin-right: 0;
+}
+
+
+.blog-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.blog-card h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+  text-align: left;
+}
+
+.blog-card p {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.carousel-btn {
+  background-color: #0071b8;
+  color: white;
+  border: none;
+  font-size: 20px;
+  width: 55px;       /* fixed width */
+  height: 52px;      /* fixed height */
+  cursor: pointer;
+  border-radius: 50%; /* makes it a circle */
+  z-index: 10;
+
+  padding: 0; /* remove padding */
+}
+
+
+.carousel-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* ---------- 1024px and below ---------- */
+@media (max-width: 1024px) {
+  .blogs-section {
+    height: auto;
+    padding: 30px;
+  }
+
+  .blog-card {
+    flex: 0 0 calc(33.33% - 15px); /* 3 cards per row */
+    margin-right: 15px;
+  }
+}
+
+/* ---------- 768px and below ---------- */
+@media (max-width: 768px) {
+  .blogs-section {
+    padding: 25px 15px;
+  }
+ .carousel-container {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .blog-card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    transform: none !important;
+  }
+
+  .blog-card {
+    flex: 0 0 90%;
+    scroll-snap-align: start;
+  }
+
+  .carousel-btn {
+    display: none; /* hide arrows on mobile */
+  }
+  .blog-card img {
+    height: 140px;
+  }
+}
+
+/* ---------- 480px and below ---------- */
+@media (max-width: 480px) {
+  .blogs-section h3 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .blog-card {
+    flex: 0 0 100%; /* 1 card per row */
+    margin-right: 0;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .blog-card img {
+    height: 150px;
+    width: 100%;
+  }
+
+  .blog-card h4 {
+    font-size: 15px;
+  }
+
+  .blog-card p {
+    font-size: 13px;
+  }
+}

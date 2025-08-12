@@ -13,12 +13,12 @@
 .terrace-cleaner-left {
   padding: 45px;
 }
-.terrace-cleaner-right{
+.terrace-cleaner-right {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 20px
+  gap: 20px;
 }
 
 .terrace-cleaner-right h3 {
@@ -64,46 +64,103 @@
   background-color: #005a9c;
 }
 /* Desktop view - default */
-.lower-sofa-cleaning, .terrace-cleaner {
+.lower-sofa-cleaning,
+.terrace-cleaner {
   display: flex;
   gap: 20px;
   padding: 40px;
 }
+/* ================= MEDIA QUERIES ================= */
 
-/* Medium screens (tablets, below 768px) */
-@media (max-width: 768px) {
-  .lower-sofa-cleaning, .terrace-cleaner {
-    flex-direction: column;
-    padding: 30px 20px;
-    text-align: center;
-  }
-
-  .terrace-cleaner-left img {
-    width: 100%;
+/* 1024px and below (Tablet landscape, small laptops) */
+@media (max-width: 1024px) {
+  .terrace-cleaner {
+    padding: 30px;
+    gap: 15px;
     height: auto;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
   }
-}
 
-/* Small screens (mobile, below 480px) */
-@media (max-width: 480px) {
-  .lower-sofa-cleaning, .terrace-cleaner {
-    padding: 20px 10px;
+  .terrace-cleaner-left {
+    padding: 30px;
   }
 
   .terrace-cleaner-right h3 {
-      font-size: 25px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .terrace-cleaner p {
+    font-size: 15px;
+  }
+
+  .terrace-cleaner-right button {
+    font-size: 16px;
+    padding: 8px 14px;
+  }
+}
+
+/* 768px and below (Tablet portrait) */
+@media (max-width: 768px) {
+  .terrace-cleaner {
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px;
+    height: auto;
+  }
+
+  .terrace-cleaner-left {
+    padding: 0;
     text-align: center;
-    line-height: 32px;
+  }
+
+  .terrace-cleaner-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .terrace-cleaner-right h3 {
+    font-size: 26px;
+    line-height: 36px;
   }
 
   .terrace-cleaner p {
     font-size: 14px;
   }
-
-  .terrace-cleaner button {
-    /* width: 100%; */
-    font-size: 16px;
-  }
 }
 
+/* 480px and below (Mobile) */
+@media (max-width: 480px) {
+  .terrace-cleaner {
+    flex-direction: column;
+    padding: 20px 15px;
+    gap: 20px;
+    height: auto;
+  }
+
+  .terrace-cleaner-left {
+    padding: 0;
+    text-align: center;
+  }
+  .terrace-cleaner-left img {
+    width: 90%;
+  }
+  .terrace-cleaner-right {
+    align-items: center;
+    text-align: center;
+  }
+
+  .terrace-cleaner-right h3 {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .terrace-cleaner p {
+    font-size: 13px;
+  }
+
+  .terrace-cleaner-right button {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}

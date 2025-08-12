@@ -1,45 +1,81 @@
-.faqs-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px;
-    background-color: #0071B80D;
-    border-radius: 10px;
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-    /* gap: 20px; */
-  }
-  .faqs-section h3{
-    font-size: 35px;
-    font-weight: 600;
-    /* margin-bottom: 20px; */
-    line-height: 45px;
-  }
-  .faqs-section p{
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
-    font-weight: 300;
-  }
-.accordion-button{
-    /* background-color: #8cc0e22f !important; */
-    background-color: #e6f1f8;
-    margin-bottom: 3px;
+.faqs-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #0071b80d;
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  /* gap: 20px; */
 }
-.accordion-button:hover{
-    color: #0072b8 !important;
+.faqs-section h3 {
+  font-size: 35px;
+  font-weight: 600;
+  /* margin-bottom: 20px; */
+  line-height: 45px;
 }
-/* Hide Bootstrap default arrow icon */
+.faqs-section p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 300;
+}
+.accordion-button {
+  /* background-color: #8cc0e22f !important; */
+  background-color: #e6f1f8;
+  margin-bottom: 3px;
+}
+.accordion-button:hover {
+  color: #0072b8 !important;
+}
+/* Default (closed state) accordion icon */
 .accordion-button::after {
-  background-image: none !important; /* Remove the SVG arrow */
-  content: '+';                      /* Add your custom icon */
+  background-image: none !important; /* Remove default SVG */
+  content: "+"; /* Custom plus icon */
   font-size: 20px;
-  color: #0071B8;
+  color: #0071b8; /* Default color */
   margin-left: auto;
-  transition: transform  0.3s ease;
+  transition: transform 0.3s ease;
 }
 
-/* When accordion is open, show minus sign */
+/* Open (active) state accordion icon */
 .accordion-button:not(.collapsed)::after {
-  content: '−'; /* Minus sign */
+  content: "−"; /* Minus sign */
+  color: white !important; /* Make icon white */
+}
+
+/* Open state accordion background and text color */
+.accordion-button:not(.collapsed) {
+  background-color: #0071b8;
+  color: white !important;
+}
+@media (max-width: 1024px) {
+  .faqs-section {
+    padding: 30px 20px;
+  }
+}
+
+/* ---------- 768px and below ---------- */
+@media (max-width: 768px) {
+  .faqs-section {
+    padding: 30px 20px;
+  }
+}
+
+/* ---------- 480px and below ---------- */
+@media (max-width: 480px) {
+  .faqs-section {
+    padding: 30px 20px;
+  }
+  .faqs-section h3{
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+  }
+    .faqs-section p{
+      text-align: center;
+    font-size: 16px;
+    line-height: 35px;
+  }
 }

@@ -41,6 +41,7 @@
   max-width: 345px ;
   height: auto;
 }
+
 @media (max-width: 1024px) {
   .customer-satisfaction {
     flex-direction: column;
