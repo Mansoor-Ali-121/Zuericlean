@@ -11,46 +11,85 @@ document.addEventListener("DOMContentLoaded", function () {
 
   let currentIndex = 0;
   const totalCards = cards.length;
+  let autoSlideInterval;
 
   function updateCarousel() {
     const screenWidth = window.innerWidth;
-
-    // ✅ Disable JS slider on small screens
+    let cardsVisible;
+    
+    // Mobile par 2 cards dikhayen, desktop par 4
     if (screenWidth <= 768) {
-      carousel.style.transform = "none"; // Disable movement
+      cardsVisible = 1;
+    } else {
+      cardsVisible = 4;
+    }
+    
+    const maxIndex = totalCards - cardsVisible;
+
+    // Carousel ko loop karne ke liye
+    if (currentIndex > maxIndex) {
+        currentIndex = 0; 
+    }
+    
+    // ✅ Sahi calculation: Har card ki width + gap ko shamil karen
+    const cardWidth = cards[0].offsetWidth; // Pehle card ki width lein
+    const gap = 30; // CSS mein jo gap set kiya hai wohi yahan likhen
+    const cardAndGap = cardWidth + gap;
+    const translateXValue = -(currentIndex * cardAndGap);
+
+    carousel.style.transform = `translateX(${translateXValue}px)`;
+
+    // Mobile par buttons chupayenge, desktop par dikhayenge
+    if (screenWidth > 768) {
+      prevBtn.style.display = "block";
+      nextBtn.style.display = "block";
+      prevBtn.disabled = currentIndex === 0;
+      nextBtn.disabled = currentIndex >= maxIndex;
+    } else {
       prevBtn.style.display = "none";
       nextBtn.style.display = "none";
-      return;
     }
+  }
 
-    // ✅ Desktop only logic
-    const cardsVisible = 4;
-    const translateXPercent = -(currentIndex * (100 / cardsVisible));
-    carousel.style.transform = `translateX(${translateXPercent}%)`;
+  // Auto-slide shuru karne ka function
+  function startAutoSlide() {
+    clearInterval(autoSlideInterval);
+    autoSlideInterval = setInterval(() => {
+      const screenWidth = window.innerWidth;
+      let cardsVisible = (screenWidth <= 768) ? 2 : 4;
 
-    // Enable/disable buttons
-    prevBtn.disabled = currentIndex === 0;
-    nextBtn.disabled = currentIndex >= totalCards - cardsVisible;
-    prevBtn.style.display = "block";
-    nextBtn.style.display = "block";
+      if (currentIndex >= totalCards - cardsVisible) {
+        currentIndex = 0;
+      } else {
+        currentIndex++;
+      }
+      updateCarousel();
+    }, 3000); // 3 seconds
   }
 
   prevBtn.addEventListener("click", () => {
+    clearInterval(autoSlideInterval);
     if (currentIndex > 0) {
       currentIndex--;
       updateCarousel();
     }
+    startAutoSlide();
   });
 
   nextBtn.addEventListener("click", () => {
-    if (currentIndex < totalCards - 4) {
+    clearInterval(autoSlideInterval);
+    if (currentIndex < totalCards - ((window.innerWidth <= 768) ? 2 : 4)) {
       currentIndex++;
       updateCarousel();
     }
+    startAutoSlide();
   });
 
-  // Re-run when window resizes
-  window.addEventListener("resize", updateCarousel);
+  window.addEventListener("resize", () => {
+    updateCarousel();
+    startAutoSlide();
+  });
 
   updateCarousel();
+  startAutoSlide();
 });
