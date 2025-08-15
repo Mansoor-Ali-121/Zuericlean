@@ -1,0 +1,18 @@
+.all-services-main-container{
+display: flex;
+flex-direction: column;
+gap: 30px;
+padding: 66px;
+justify-content: center;
+align-items: center;
+/* width: 1300px;    */
+/* margin-top: 5px; */
+/* background-color: #0071b80d; */
+}
+.welcome-to-zuericlean{
+    width: 1190px;
+}
+.tenancy-cleaning
+{
+    width: 1190px;
+}
