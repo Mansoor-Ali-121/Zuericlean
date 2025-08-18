@@ -1,0 +1,416 @@
+.bookingpage-form-section-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 20px; */
+    padding: 40px;
+    /* border-radius: 48px; */
+    /* width: 1044px; */
+}
+
+.bookingpage-form-section {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;
+    text-align: center;
+    justify-content: center; */
+    gap: 20px;
+    padding: 25px 80px;
+
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+    /* height: 363px; */
+    border-radius: 48px;
+    margin: 20px;
+    width: 1044px;
+}
+
+.heading-and-button-block {
+    /* display: flex; */
+    /* align-items: center;
+    justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    /* flex-direction: column; */
+}
+
+.bookingpage-form-section h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    line-height: 25px;
+    border-left: 8px solid #0071b8;
+    padding-left: 10px;
+}
+
+.bookingpage-form-section h3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 45px;
+}
+
+.bookingpage-form-section p {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    line-height: 25px;
+}
+
+.custom-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    max-width: 1044px;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 280px;
+}
+
+.form-field label {
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.form-field input,
+.form-field select {
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    background-color: #8c8c8c0d;
+}
+
+.phone-input {
+    display: flex;
+    gap: 10px;
+}
+
+.phone-input select {
+    max-width: 150px;
+    color: #9C9C9C;
+
+}
+
+.checkbox-field {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+
+/* Appointment Details h3 with blue bar on left */
+.bookingpage-form-section h3.appointment-heading {
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 45px;
+    padding-left: 20px;
+    /* space for the bar */
+}
+
+.bookingpage-form-section h3.appointment-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 8px;
+    height: 100%;
+    background-color: #0071b8;
+    /* tumhara blue */
+    border-radius: 2px;
+}
+
+/* Style input inside appointment section */
+.appointment-input {
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    background-color: #8c8c8c0d;
+    border: none;
+    box-sizing: border-box;
+    color: #9C9C9C;
+}
+
+.form-note {
+    font-size: 14px;
+    color: #888;
+    margin-top: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+    line-height: 1.4;
+}
+
+.form-note {
+    color: #8C8C8C;
+}
+
+.info-icon {
+    font-size: 16px;
+    color: #888;
+    flex-shrink: 0;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    border-radius: 34px;
+    transition: 0.3s;
+}
+
+.slider:before {
+    content: "";
+    position: absolute;
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.switch input:checked+.slider {
+    background: #0071b8;
+}
+
+.switch input:checked+.slider:before {
+    transform: translateX(16px);
+}
+
+.date-schedule-section {
+    max-width: 400px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.date-schedule-section h3 {
+    font-size: 28px;
+    font-weight: 700;
+    border-left: 6px solid #0071b8;
+    padding-left: 10px;
+    margin-bottom: 15px;
+}
+
+.date-schedule-section .question {
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#cleaning-date {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 5px rgb(0 0 0 / 0.1);
+    margin-bottom: 20px;
+}
+
+.info-text {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-text strong {
+    color: #0071b8;
+}
+
+.toggle-contact {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+/* Toggle switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 20px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input:checked+.slider {
+    background-color: #0071b8;
+}
+
+input:checked+.slider:before {
+    transform: translateX(16px);
+}
+
+.calendar-center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.additional-services h3 {
+    font-size: 18px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.blue-bar {
+    width: 5px;
+    height: 24px;
+    background-color: #007acc;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 30px;
+    max-width: 1000px;
+}
+
+.services-grid label {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 15px;
+    gap: 10px;
+    font-size: 14;
+    font-weight: 600;
+}
+
+/* Toggle style */
+.services-grid input[type="checkbox"] {
+    appearance: none;
+    width: 40px;
+    height: 20px;
+    background: #ccc;
+    border-radius: 20px;
+    position: relative;
+    outline: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+}
+
+.services-grid input[type="checkbox"]::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: white;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: 0.3s;
+}
+
+.services-grid input[type="checkbox"]:checked {
+    background: #007acc;
+}
+
+.services-grid input[type="checkbox"]:checked::before {
+    left: 22px;
+}
+
+.additional-details-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+    max-width: 1000px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    padding: 12px 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    font-size: 15px;
+    color: #333;
+}
+.additional-instruction-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px 30px;
+    max-width: 1000px;
+}
