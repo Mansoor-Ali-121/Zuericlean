@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Züeri Clean</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet"
+        crossorigin="anonymous" />
+
+    <!-- FLipcart js library -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+    <link rel="stylesheet" href="./Css/style.css" />
+    <link rel="stylesheet" href="./Css/common.css" />
+    <link rel="stylesheet" href="./Css/footer.css" />
+
+    <!-- Contact Page  css -->
+    <link rel="stylesheet" href="./Css/contact_page/hero-section.css">
+    <link rel="stylesheet" href="./Css/contact_page/form.css">
+    <link rel="stylesheet" href="./Css/contact_page/reach-us.css">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom px-4 py-3">
+        <div class="container-fluid">
+            <!-- Mobile Top Bar (hamburger + logo + language) -->
+            <div class="d-flex justify-content-between align-items-center w-100 d-lg-none">
+                <!-- Hamburger -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="color: white">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Mobile Logo -->
+                <a class="navbar-brand mx-auto" href="#">
+                    <img src="./Images/white_logo.png" alt="Züri Clean" class="mobile-logo" style="height: 50px" />
+                </a>
+
+                <!-- Language Dropdown -->
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button"
+                        id="languageDropdownMobile" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://flagcdn.com/ch.svg" alt="Swiss Flag" class="flag-icon me-2" />
+                        Ch
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownMobile">
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#"><img
+                                    src="https://flagcdn.com/gb.svg" alt="English" class="flag-icon me-2" />English</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#"><img
+                                    src="https://flagcdn.com/fr.svg" alt="French" class="flag-icon me-2" />Français</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item d-flex align-items-center" href="#"><img
+                                    src="https://flagcdn.com/de.svg" alt="German" class="flag-icon me-2" />Deutsch</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Full Navbar Collapse Section -->
+            <div class="collapse navbar-collapse justify-content-between mt-2 mt-lg-0" id="navbarNav">
+                <!-- Left nav links -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=".//services.html">Cleaning Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cleaning Handover Guarantee</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Office / Shop Cleaning</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                </ul>
+
+                <!-- Right Side: Language & Button (Desktop) -->
+                <div class="d-none d-lg-flex align-items-center gap-3 navbar-right">
+                    <!-- Language Dropdown -->
+                    <div class="dropdown">
+                        <button class="btn btn-light dropdown-toggle d-flex align-items-center" type="button"
+                            id="languageDropdownDesktop" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="https://flagcdn.com/ch.svg" alt="Swiss Flag" class="flag-icon me-2" />
+                            Ch
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="languageDropdownDesktop">
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#"><img
+                                        src="https://flagcdn.com/gb.svg" alt="English"
+                                        class="flag-icon me-2" />English</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#"><img
+                                        src="https://flagcdn.com/fr.svg" alt="French"
+                                        class="flag-icon me-2" />Français</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item d-flex align-items-center" href="#"><img
+                                        src="https://flagcdn.com/de.svg" alt="German"
+                                        class="flag-icon me-2" />Deutsch</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Estimate Button -->
+                    <button class="btn btn-estimate px-3 py-2 rounded">
+                        Get a Free Estimate
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <section class="contact-form-hero-section">
+        <h1>Remain In Touch With Züriclean Anytime |We Are Available 24/7</h1>
+    </section>
+
+    <!-- Form -->
+    <section class="contact-form-section">
+        <div class="contact-form-container">
+            <h3 class="contact-form-title txt-background-color">Contact Form</h3>
+            <div class="contact-form-field-section">
+                <div class="contact-form-field">
+                    <label for="name">*Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="contact-form-field">
+                    <label for="email">*Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="contact-form-field">
+                    <label for="phone">*Phone</label>
+                    <input type="number" id="phone" name="phone" required>
+                </div>
+                <div class="contact-form-field">
+                    <label for="zipcode">*Zipcode</label>
+                    <input type="number" id="zipcode" name="zipcode" required>
+                </div>
+                <div class="contact-form-field">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                <div class="contact-form-field">
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message" required></input>
+                </div>
+                <div class="submit-button">
+                    <button type="submit" class="btn-background-color px-5">Submit</button>
+                </div>
+            </div>
+
+            <!-- Reach us -->
+            <div class="contact-form-reach-us-section">
+                <p>At Züriclean, we understand that your cleaning needs are important, and we're always ready to assist
+                    you. Whether you have a question about our cleaning services in Zürich, need support, or want to
+                    schedule a cleaning, our team is available around the clock to help. <br>
+                    We believe in providing exceptional customer service and delivering top-quality cleaning solutions
+                    tailored to your specific needs. No matter the time of day or night, we're just a message or phone
+                    call away. Whether you're looking for residential or handover cleaning or commercial cleaning
+                    services, or if you need urgent assistance, you can trust Züriclean to be there when you need us the
+                    most.</p>
+                <h3>How to <span class="txt-background-color"> Reach Us:</span></h3>
+                <p>Please feel free to reach out using the contact form below, and a member of our team will get back to
+                    you as soon as possible. Whether you're inquiring about a quote, want to discuss a customized
+                    cleaning plan, or have any other questions, we're happy to assist. <br>
+                    Simply provide your name, email, phone number, and zip code to help us better understand your
+                    location and needs. If you'd prefer, you can also reach us by phone or email directly for a faster
+                    response.</p>
+
+            </div>
+            <!-- Reach us -->
+
+            <!-- feedback -->
+            <div class="contact-form-feedback-section">
+                <div class="contact-form-feedback-left">
+                    <h3>We Value Your <span class="txt-background-color"> Feedback </span></h3>
+                    <p>Your feedback is essential to us. We’re always striving to improve and enhance our services. If
+                        you’ve recently experienced a cleaning service with Züriclean, we would love to hear about your
+                        experience to ensure we continue delivering the best possible service. <br>
+                        Thank you for choosing Züriclean. We look forward to assisting you!</p>
+                  <!-- btns -->
+                        <div class="d-flex justify-content-center align-items-center flex-column gap-2 icon-btn">
+                        <div>
+                         <a href="#">   <button class="btn-background-color icon-btn"><span class="fas fa-phone"></span>+41 76 413 61 83</button></a>
+                        </div>
+
+                        <div>
+                             <a href="#">  <button class="btn-background-color icon-btn"><span class="far fa-envelope"></span>
+                                info@zuericlean.com</button></a>
+                        </div>
+                    </div>
+                  <!-- btns -->
+
+                </div>
+                <div class="contact-form-feedback-right">
+                    <!-- contact-map -->
+                    <div id="contact-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.8721136379696!2d8.536646915568443!3d47.397019779169654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b75045081b3%3A0x18c50f1e6f0a6c3b!2sSchaffhauserstrasse%20380%2C%208050%20Z%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2s!4v1632448665873!5m2!1sen!2s"
+                            width="384px" height="310" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+          
+                    <hr>
+                </div>
+            </div>
+            <!-- feedback -->
+        </div>
+    </section>
+
+
+    <!-- Map  -->
+    <!-- contact-map -->
+    <div id="contact-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.8721136379696!2d8.536646915568443!3d47.397019779169654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900b75045081b3%3A0x18c50f1e6f0a6c3b!2sSchaffhauserstrasse%20380%2C%208050%20Z%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2s!4v1632448665873!5m2!1sen!2s"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <!-- contact-map-end -->
+
+    <!-- Footer -->
+    <section class="footer-section">
+        <div class="footer-overlay"></div>
+
+        <div class="footer-container">
+            <div class="footer-left">
+                <img src="Images/logo.png" alt="ZueriClean Logo" class="footer-logo" />
+                <p>
+                    Keep yourself apart from the cleanup stress – As the best cleaning
+                    service Zürich, we’ll take care of all of your living space – Also
+                    consider us for move out cleaning with a trusted handover cleaning
+                    guarantee.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Cleanings</h4>
+                    <ul>
+                        <li><a href="#">Residential Cleaning</a></li>
+                        <li><a href="#">Relocation, Move</a></li>
+                        <li><a href="#">Out and Handover Cleaning</a></li>
+                        <li><a href="#">Office Cleaning</a></li>
+                        <li><a href="#">Carpet Cleaning</a></li>
+                        <li><a href="#">Event Cleaning</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Locations</h4>
+                    <ul>
+                        <li><a href="#">Aarau</a></li>
+                        <li><a href="#">Baden</a></li>
+                        <li><a href="#">Basel</a></li>
+                        <li><a href="#">Bern</a></li>
+                        <li><a href="#">Biel Bienne</a></li>
+                        <li><a href="#">Dübendorf</a></li>
+                        <li><a href="#">See More</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Important Links</h4>
+                    <ul>
+                        <li><a href="#">Tenancy Termination</a></li>
+                        <li><a href="#">Date Arranging</a></li>
+                        <li><a href="#">Packing Transport</a></li>
+                        <li><a href="#">Blogs</a></li>
+                        <li><a href="#">Our Clients</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Contact Us</h4>
+                    <ul>
+                        <li>+41764136183</li>
+                        <li>info@zuericlean.com</li>
+                        <li>Schaffhauserstrasse 380, 8050 Zürich</li>
+                        <li>A product of Specialclean Züri GmbH</li>
+                    </ul>
+                    <div class="footer-icons">
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-linkedin-in"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © Copyright ZueriClean 2025 All Rights Reserved
+        </div>
+    </section>
+    <!-- Footer  end-->
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    </body>
+
+</html>

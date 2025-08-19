@@ -1,0 +1,44 @@
+
+/* reach us  */
+.contact-form-reach-us-section{
+  width: 1093px;
+  padding: 10px;
+}
+.contact-form-reach-us-section h3{
+  font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+/* feedback */
+
+.contact-form-feedback-section{
+  width: 1093px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.contact-form-feedback-section h3{
+  font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+}
+.icon-btn{
+
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 280px; 
+  max-width: 100%;
+  gap: 10px;
+
+}
+hr{
+    margin: 5px 0;
+    border: 1px solid #000000;
+    
+}
