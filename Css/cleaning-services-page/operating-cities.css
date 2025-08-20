@@ -1,10 +1,13 @@
-.cities-container {
+.cleaning-service-page-cities-container {
   padding: 40px 20px;
   /* background-color: #f0faff; */
   /* text-align: center; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* height: 960px; */
 }
 
-.cities-container h3 {
+.cleaning-service-page-cities-container h3 {
   font-size: 35px;
   font-weight: 600;
   line-height: 45px;
@@ -15,7 +18,7 @@
   color: #0071b8;
 }
 
-.cities-grid {
+.cleaning-service-page-cities-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -25,7 +28,7 @@
 }
 
 /* Fixed width for each city box so 6 can fit per row */
-.city-box {
+.cleaning-service-page-cities-grid .city-box {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,13 +42,13 @@
   border-radius: 20px;
   box-sizing: border-box; /* Includes padding inside width */
 }
-.city-box:hover {
+.cleaning-service-page-cities-grid .city-box:hover {
   background-image: url("../../Images/cities2.png");
   cursor: pointer;
   transition: all 0.5s ease-in-out;
 }
 
-.city-icon {
+.cleaning-service-page-cities-grid .city-icon {
   position: absolute;
   left: 0px;
   top: 50%;
@@ -62,32 +65,32 @@
   align-items: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
-.city-box:hover .city-icon {
+.cleaning-service-page-cities-grid .city-box:hover .city-icon {
   background-color: #fff;
   color: #0071b8;
 }
-.city-name {
+.cleaning-service-page-cities-grid .city-name {
   font-weight: 600;
   color: #000;
   padding: 15px 20px;
   font-size: 18px;
 }
-.city-box:hover .city-name {
+.cleaning-service-page-cities-grid .city-box:hover .city-name {
   color: white;
 }
 /* ---------- 1024px and below ---------- */
 @media (max-width: 1024px) {
-  .city-box {
+  .cleaning-service-page-cities-grid .city-box {
     width: calc((100% - 80px) / 4); /* 4 boxes per row */
     height: 90px;
   }
 
-  .city-name {
+.cleaning-service-page-cities-grid  .city-name {
     font-size: 16px;
     padding: 10px 15px;
   }
 
-  .city-icon {
+.cleaning-service-page-cities-grid  .city-icon {
     width: 36px;
     height: 36px;
     font-size: 14px;
@@ -96,16 +99,16 @@
 
 /* ---------- 768px and below ---------- */
 @media (max-width: 768px) {
-  .city-box {
+.cleaning-service-page-cities-grid  .city-box {
     width: calc((100% - 60px) / 3); /* 3 boxes per row */
     height: 80px;
   }
 
-  .city-name {
+.cleaning-service-page-cities-grid  .city-name {
     font-size: 15px;
   }
 
-  .city-icon {
+.cleaning-service-page-cities-grid  .city-icon {
     width: 34px;
     height: 34px;
     font-size: 13px;
@@ -114,17 +117,17 @@
 
 /* ---------- 480px and below ---------- */
 @media (max-width: 480px) {
-  .city-box {
+.cleaning-service-page-cities-grid  .city-box {
     width: calc((100% - 20px) / 2); /* 2 boxes per row */
     height: 75px;
   }
 
-  .city-name {
+.cleaning-service-page-cities-grid  .city-name {
     font-size: 14px;
     padding: 8px 12px;
   }
 
-  .city-icon {
+.cleaning-service-page-cities-grid  .city-icon {
     width: 32px;
     height: 32px;
     font-size: 12px;

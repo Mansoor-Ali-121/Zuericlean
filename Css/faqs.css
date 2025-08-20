@@ -1,13 +1,9 @@
-.faqs-section {
+.cleaning-service-page-faqs-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 40px;
-  background-color: #0071b80d;
-  border-radius: 10px;
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-  /* gap: 20px; */
 }
 .faqs-section h3 {
   font-size: 35px;
@@ -51,31 +47,56 @@
   color: white !important;
 }
 @media (max-width: 1024px) {
-  .faqs-section {
+  .cleaning-service-page-faqs-section {
     padding: 30px 20px;
   }
 }
 
 /* ---------- 768px and below ---------- */
 @media (max-width: 768px) {
-  .faqs-section {
+  .cleaning-service-page-faqs-section {
     padding: 30px 20px;
   }
 }
 
 /* ---------- 480px and below ---------- */
 @media (max-width: 480px) {
-  .faqs-section {
+  .cleaning-service-page-faqs-section {
     padding: 30px 20px;
   }
-  .faqs-section h3{
+  .cleaning-service-page-faqs-section h3{
     font-size: 20px;
     line-height: 35px;
     text-align: center;
   }
-    .faqs-section p{
+    .cleaning-service-page-faqs-section p{
       text-align: center;
     font-size: 16px;
     line-height: 35px;
   }
+}
+
+/* Balcony Cleaning css */
+
+.balcony-cleaning{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  /* background-color: #0071b80d; */
+  border-radius: 10px;
+  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+  gap: 20px;
+}
+.balcony-cleaning h3{
+  font-size: 35px;
+  font-weight: 600;
+  /* margin-bottom: 20px; */
+  line-height: 45px;
+}
+.balcony-cleaning p{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  font-weight: 300;
 }

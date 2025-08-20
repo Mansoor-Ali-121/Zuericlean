@@ -1,0 +1,45 @@
+.cleaning-service-page-different-locations-with-reviews-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    /* text-align: center; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #0071B80D;
+    /* height: 960px; */
+}
+.cleaning-service-page-different-locations-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 20px;
+    width: 100%;
+    margin: 10px;
+    padding: 40px 20px;
+
+}
+
+.cleaning-service-page-different-locations-with-reviews-container h3{
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+.cleaning-service-page-different-locations-container .service-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 17px;
+    /* height: 200px; */
+    border-radius: 10px;
+    background-color: #0071B8;
+    color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    cursor: pointer;
+}
