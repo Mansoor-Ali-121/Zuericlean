@@ -1,20 +1,19 @@
-.faqs-section {
+.cleaning-service-page-faqs-section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 40px;
-  background-color: #0071b80d;
   /* height: 363px; */
 
 }
-.faqs-section h3 {
+.cleaning-service-page-faqs-section h3 {
   font-size: 35px;
   font-weight: 600;
   /* margin-bottom: 20px; */
   line-height: 45px;
 }
-.faqs-section p {
+.cleaning-service-page-faqs-section p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
@@ -50,29 +49,29 @@
   color: white !important;
 }
 @media (max-width: 1024px) {
-  .faqs-section {
+  .cleaning-service-page-faqs-section {
     padding: 30px 20px;
   }
 }
 
 /* ---------- 768px and below ---------- */
 @media (max-width: 768px) {
-  .faqs-section {
+  .cleaning-service-page-faqs-section {
     padding: 30px 20px;
   }
 }
 
 /* ---------- 480px and below ---------- */
 @media (max-width: 480px) {
-  .faqs-section {
+  .cleaning-service-page-faqs-section {
     padding: 30px 20px;
   }
-  .faqs-section h3{
+  .cleaning-service-page-faqs-section h3{
     font-size: 20px;
     line-height: 35px;
     text-align: center;
   }
-    .faqs-section p{
+    .cleaning-service-page-faqs-section p{
       text-align: center;
     font-size: 16px;
     line-height: 35px;

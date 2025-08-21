@@ -1,5 +1,5 @@
-.cleaning-service-page-hero-section {
-    background-image: url('../../Images/cleaning-services-page/cleaning-hero.png');
+.cleaning-service-spage-hero-section {
+    background-image: url('../../Images/city-hero-page.png');
     height: 198px;
     position: relative;
     display: flex;
@@ -11,7 +11,7 @@
     color: white;
 }
 
-.cleaning-service-page-hero-section::before {
+.cleaning-service-spage-hero-section::before {
     content: "";
     position: absolute;
     top: 0;
@@ -21,7 +21,7 @@
     background-color: #0071B8B2;
 }
 
-.cleaning-service-page-hero-section h1 {
+.cleaning-service-spage-hero-section h1 {
     font-size: 36px;
     color: #ffffff;
     text-align: center;
@@ -32,7 +32,7 @@
     height: 90px;
 }
 
-.cleaning-service-page-hero-section h6 {
+.cleaning-service-spage-hero-section h6 {
     font-size: 20px;
     font-weight: 300;
     z-index: 1;
