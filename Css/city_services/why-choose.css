@@ -1,0 +1,209 @@
+.why-choose-zueri-with-city-vise-reviews-section {
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.why-choose-zurie {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 65px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    border-radius: 10px;
+    margin: 20px
+}
+
+.why-choose-zurie h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 20px;
+    text-align: left !important;
+}
+
+.why-choose-zueri-with-city-vise-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 35px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    border-radius: 10px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+
+.why-choose-zueri-with-city-vise-box {
+    background-color: #0071B80D;
+    padding: 12px 18px;
+    width: 250px;
+    height: 125px;
+    border-radius: 10px;
+    border: 2px solid #0071B8;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); */
+}
+
+.why-choose-zueri-with-city-vise-box h5 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.why-choose-zueri-with-city-vise-box p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 10px;
+
+}
+
+
+/* rating section css */
+
+.city-services-page-rating {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 65px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    border-radius: 10px;
+    margin: 20px
+}
+
+.city-services-page-rating h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 20px;
+    text-align: left !important;
+}
+
+.city-services-page-rating-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    border-radius: 10px;
+
+}
+
+.city-services-page-rating-stars .stars {
+    color: #FFBF00;
+}
+
+.city-services-page-total-reviews {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+
+/* .testimonial section */
+
+.what-locals-in-baden-say{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 65px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    border-radius: 10px;
+    margin: 20px
+}
+.what-locals-in-baden-say h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 20px;
+    text-align: left !important;
+}
+.testimonial-card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 20px;
+    padding: 40px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    border-radius: 10px;
+    margin: 20px
+}
+.testimonial-card-overlay{
+
+
+ background-image: url("../../Images/city-about.png");
+    /* transform: scale(2) translate(-50% -50%); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 15px;
+   
+}
+.testimonial-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 40px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    margin: 20px;
+    width: 303px;
+    height: 330px;
+    border: 2px solid #0071B8;
+    position: relative;
+    rotate: -5deg;
+  
+}
+.testimonial-card::before{
+    content: "";
+    position: absolute;
+    bottom: 20%;
+    right: 97%;
+    padding: 10% 5%;
+  background-color: #f2f8fb;
+}
+.testimonial-card::after{
+    content: "";
+    position: absolute;
+    top: 10%;
+    left: 97%;
+    padding: 10% 5%;
+  background-color: #f2f8fb;
+    /* width: 100px;
+    height: 100px; */
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); */
+}
+
+.quote-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 40px;
+    color: #0071B8;
+}
+
+.testimonial-text {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 10px;
+}
+

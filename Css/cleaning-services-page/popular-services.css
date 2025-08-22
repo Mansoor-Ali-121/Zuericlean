@@ -1,5 +1,5 @@
 .cleaning-service-page-popular-services {
-  padding: 40px 20px;
+  padding: 0px 65px;
   /* text-align: center; */
   margin-top: 20px;
   margin-bottom: 20px;
@@ -17,8 +17,6 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 16px;
-
-  margin: 0 auto;
 }
 
 .cleaning-service-page-popular-services-grid .service-box {

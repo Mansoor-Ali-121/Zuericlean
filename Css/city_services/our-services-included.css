@@ -1,9 +1,16 @@
-
-.cleaning-service-page-why-choose{
-  padding: 40px 20px;
+.our-services-with-home-cleaning-services-section{
+    background-color: #0071BC0D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+.city-services-page-our-services{
+  padding: 0px 65px;
 
 }
-.cleaning-service-page-why-choose h3{
+.city-services-page-our-services h3{
 
     font-size: 35px;
     font-weight: 600;
@@ -11,15 +18,17 @@
     margin-bottom: 20px;
 
 }
-.why-choose-boxes {
+.our-services-boxes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
+  padding: 0 10%;
   margin: 40px 0;
+  justify-content: space-around;
   
 }
 
-.why-choose-box {
+.our-services-boxe {
   display: flex;
   align-items: flex-start;
   gap: 15px;
@@ -29,8 +38,8 @@
 .number-circle {
   min-width: 50px;
   min-height: 50px;
-  background-color: #F0F8FF;
-  color: #0071BC;
+  color: #fff;
+  background-color: #0071BC;
   font-weight: bold;
   border-radius: 50%;
   /* text-align: center; */
