@@ -1,0 +1,156 @@
+.city-service-page-faqs-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 65px;
+    /* height: 363px; */
+
+}
+
+.city-service-page-faqs-section h3 {
+    font-size: 35px;
+    font-weight: 600;
+    /* margin-bottom: 20px; */
+    text-align: left;
+    line-height: 45px;
+}
+
+.city-service-page-faqs-section p {
+    font-size: 16px;
+    line-height: 1.5;
+    /* margin-bottom: 20px; */
+    font-weight: 300;
+    text-align: center;
+}
+
+.accordion-button {
+    /* background-color: #8cc0e22f !important; */
+    background-color: #e6f1f8;
+    margin-bottom: 3px;
+}
+
+.accordion-button:hover {
+    color: #0072b8 !important;
+}
+
+/* Default (closed state) accordion icon */
+.accordion-button::after {
+    background-image: none !important;
+    /* Remove default SVG */
+    content: "+";
+    /* Custom plus icon */
+    font-size: 20px;
+    color: #0071b8;
+    /* Default color */
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Open (active) state accordion icon */
+.accordion-button:not(.collapsed)::after {
+    content: "−";
+    /* Minus sign */
+    color: white !important;
+    /* Make icon white */
+}
+
+/* Open state accordion background and text color */
+.accordion-button:not(.collapsed) {
+    background-color: #0071b8;
+    color: white !important;
+}
+
+@media (max-width: 1024px) {
+    .city-service-page-faqs-section {
+        padding: 30px 20px;
+    }
+}
+
+/* ---------- 768px and below ---------- */
+@media (max-width: 768px) {
+    .city-service-page-faqs-section {
+        padding: 30px 20px;
+    }
+}
+
+/* ---------- 480px and below ---------- */
+@media (max-width: 480px) {
+    .city-service-page-faqs-section {
+        padding: 30px 20px;
+    }
+
+    .city-service-page-faqs-section h3 {
+        font-size: 20px;
+        line-height: 35px;
+        text-align: center;
+    }
+
+    .city-service-page-faqs-section p {
+        text-align: center;
+        font-size: 16px;
+        line-height: 35px;
+    }
+}
+
+/* Balcony Cleaning css */
+
+
+.city-services-page-book-your-cleaning-service {
+    padding: 25px 65px;
+
+}
+
+.city-services-page-book-your-cleaning-service h3 {
+
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 20px;
+
+}
+
+.city-services-page-book-your-cleaning-service .why-choose-boxes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 40px 0;
+
+}
+
+.city-services-page-book-your-cleaning-service .why-choose-box {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.city-services-page-book-your-cleaning-service .icon-circle {
+    min-width: 40px;
+    min-height: 40px;
+    background-color: #0071BC;
+    color: #ffffff;
+    /* font-weight: bold;   */
+    border-radius: 50%;
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+
+.why-choose-box a {
+    color: #0071BC;
+    /* text-decoration: underline; */
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+.why-choose-box a:hover {
+    color: #0071BC;
+    text-decoration: underline;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}

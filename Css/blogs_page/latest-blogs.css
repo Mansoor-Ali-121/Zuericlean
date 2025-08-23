@@ -1,0 +1,129 @@
+.latest-blogs-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.letest-blogs-section-left-section {
+    padding: 40px;
+    width: 70%;
+}
+
+.latest-blogs-section h3 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+
+.letest-blogs-section-left-section-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    transition: transform 0.5s ease;
+    /* Remove gap and use margin on cards */
+}
+
+
+.latest-blogs-card {
+
+    box-sizing: border-box;
+    padding: 10px;
+    border-radius: 8px;
+    margin-right: 20px;
+    /* space between cards */
+}
+
+/* Remove margin from last card so no extra space on right */
+.latest-blogs-card:last-child {
+    margin-right: 0;
+}
+
+.latest-blogs-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 14px;
+}
+
+.latest-blogs-card h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+
+.latest-blogs-card p {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    text-align: left;
+}
+
+/* Sidebar */
+.letest-blogs-section-right-section {
+    width: 30%;
+    padding: 40px;
+}
+
+.letest-blogs-section-right-section h3 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 45px;
+}
+
+.latest-blogs-section-sidebar {
+    padding: 40px;
+    background-color: #0071b80d;
+    border-radius: 10px;
+    border: #0071B8 1px solid;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 15%;
+}
+
+/* .latest-blogs-section-sidebar .sidebar-card{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+} */
+ .sidebar-card ul{
+    padding: 20px;
+    margin-bottom: 20px;
+ }
+.sidebar-card ul li {
+    background-color: #ffffff0d;
+    padding: 10px;
+    background-color: #fff ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar-card ul li:hover {
+    background-color: #0071B8;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+.sidebar-card ul li:hover a{
+    color: #fff;
+    transition: color 0.3s ease;
+}
+.latest-blogs-section-sidebar h2{
+    font-size: 17.94px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.latest-blogs-section-sidebar span{
+    font-size: 15px;
+    font-weight: 600;
+
+}

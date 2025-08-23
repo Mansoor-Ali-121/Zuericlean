@@ -207,3 +207,68 @@
     margin-top: 10px;
 }
 
+
+/* why choose our company */
+.why-choose-our-company{
+
+}
+
+
+
+.why-choose-our-company {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 20px;
+    padding: 0px 65px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    border-radius: 10px;
+    margin: 20px
+}
+
+.why-choose-our-company h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    margin-bottom: 20px;
+    text-align: left !important;
+}
+
+.why-choose-our-company-with-city-vise-box-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 10px;
+    /* background-color: #0071b80d; */
+    /* height: 363px; */
+    border-radius: 10px;
+    /* margin: 20px; */
+    flex-wrap: wrap;
+}
+
+.why-choose-our-company-with-city-vise-box {
+    background-color: #0071B80D;
+    padding: 12px 18px;
+    width: 250px;
+    height: 125px;
+    border-radius: 10px;
+    border: 2px solid #0071B8;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25); */
+}
+
+.why-choose-our-company-with-city-vise-box h5 {
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.why-choose-our-company-with-city-vise-box p {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 22px;
+    margin-top: 10px;
+
+}
