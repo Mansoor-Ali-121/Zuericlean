@@ -9,25 +9,10 @@
   line-height: 45px;
 }
 
-.carousel-wrapper {
+/* Ensure swiper container allows overflow for buttons */
+swiper-container {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.carousel-container {
-  overflow: hidden;
-  width: 100%;
-}
-
-.blog-card-container {
-  display: flex;
-  transition: transform 0.5s ease;
-  /* Remove gap and use margin on cards */
+  overflow: visible !important;
 }
 
 .blog-card {
@@ -64,7 +49,9 @@
   text-align: left;
 }
 
-.carousel-btn {
+/* Swiper navigation buttons styled exactly like your carousel-btn */
+swiper-container::part(button-prev),
+swiper-container::part(button-next) {
   background-color: #0071b8;
   color: white;
   border: none;
@@ -73,12 +60,27 @@
   height: 52px; /* fixed height */
   cursor: pointer;
   border-radius: 50%; /* makes it a circle */
-  z-index: 10;
+  z-index: 20;
 
   padding: 0; /* remove padding */
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-.carousel-btn:disabled {
+/* Position buttons on left and right, pushed further outside */
+swiper-container::part(button-prev) {
+  left: -40px;
+}
+
+swiper-container::part(button-next) {
+  right: -40px;
+}
+
+/* Disabled state */
+swiper-container::part(button-prev)[disabled],
+swiper-container::part(button-next)[disabled] {
   opacity: 0.3;
   cursor: default;
 }
@@ -94,7 +96,17 @@
     flex: 0 0 calc(33.33% - 15px); /* 3 cards per row */
     margin-right: 15px;
   }
+
+  swiper-container::part(button-prev),
+  swiper-container::part(button-next) {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    left: -25px;
+    right: -25px;
+  }
 }
+
 @media (max-width: 768px) {
   .blogs-section {
     padding: 25px 0;
@@ -130,7 +142,9 @@
     margin: 10px;
   }
 
-  .carousel-btn {
+  /* Buttons visible and positioned on mobile */
+  swiper-container::part(button-prev),
+  swiper-container::part(button-next) {
     display: flex !important; /* Force visible */
     align-items: center;
     justify-content: center;
@@ -140,18 +154,18 @@
     z-index: 100;
     width: 40px;
     height: 40px;
-    /* background: rgba(0, 0, 0, 0.5);
-    color: white; */
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    left: 5px;
+    right: 5px;
   }
 
-  .carousel-btn.prev {
+  swiper-container::part(button-prev) {
     left: 5px; /* Left side arrow */
   }
 
-  .carousel-btn.next {
+  swiper-container::part(button-next) {
     right: 5px; /* Right side arrow */
   }
 

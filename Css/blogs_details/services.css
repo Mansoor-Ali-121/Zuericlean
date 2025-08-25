@@ -1,0 +1,174 @@
+.blogs-details-page-related-services{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 35px;    
+}
+.blogs-details-page-related-services h2 {
+
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: #000
+}
+.blogs-details-page-related-services h3 {
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+.blogs-details-page-related-services h5 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  color: #0071B8;
+  height: 40px;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #0071B80D;
+}
+.blogs-details-page-related-services .cleaning-cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  min-width: max-content;
+  margin: auto;
+  padding: auto;
+  justify-content: center;
+}
+.blogs-details-page-related-services .cleaning-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 15px;
+  box-shadow: 10px 0 20px #0071b82b;
+  padding: 8px;
+  gap: 5px;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 270px;
+  min-height: 343px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+  color: #000; /* default text */
+}
+
+.cleaning-card:hover {
+  background-color: #0071b8;
+  color: #ffffff;
+  transform: scale(1.1);
+  transition: all 0.8s ease;
+
+}
+.blogs-details-page-related-services .cleaning-card h3{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+ .blogs-details-page-related-services .cleaning-card .desc{
+    font-size: 14px;
+    text-align: left;
+    padding: 0 10px;
+}
+
+/* override text color on hover */
+.cleaning-card:hover h3,
+/* .cleaning-card-content:hover img, */
+.cleaning-card:hover .sub,
+.cleaning-card:hover .desc,
+.cleaning-card:hover .stars {
+  color: #ffffff;
+  /* transform: scale(1); */
+}
+
+/* fix stars gold on hover */
+.cleaning-card:hover .stars {
+  color: gold;
+}
+
+/* button stays white text on blue background */
+.cleaning-card button {
+  background-color: #0071b8;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.cleaning-card:hover button {
+  background-color: #ffffff;
+  color: #0071b8;
+  font-weight: 600;
+}
+
+.cleaning-card:hover .btn-icon {
+  color: #0071b8;
+}
+
+.btn-icon {
+  font-size: 20px;
+  margin-left: 6px;
+}
+.cleaning-card-content img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 1200px) {
+  .cleaning-cards-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .cleaning-cards-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .cleaning-cards-container {
+    grid-template-columns: 1fr;
+  }
+  .all-services .all-services-top p {
+    text-align: center;
+  }
+}
+/* For tablets and smaller screens */
+@media (max-width: 992px) {
+  .all-services h2 {
+    font-size: 28px;
+    height: auto;
+    text-align: center;
+  }
+
+  .all-services {
+    padding: 20px;
+  }
+}
+
+/* For mobile screens */
+@media (max-width: 600px) {
+  .all-services h2 {
+    font-size: 22px;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .all-services {
+    padding: 15px;
+  }
+}
