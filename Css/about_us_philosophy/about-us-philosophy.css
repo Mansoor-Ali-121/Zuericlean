@@ -1,0 +1,80 @@
+.about-us-philosophy-page-section {
+  display: flex;
+  /* min-height: 80vh;  */
+  flex-wrap: wrap;
+}
+
+.about-us-page-philosophy-left-section {
+  width: 40%;
+}
+
+.about-us-page-philosophy-left-section img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  background-size: cover;
+  background-position: center;
+}
+
+.about-us-philosophy-page-right-section {
+  width: 60%;
+  padding: 40px;
+  background-color: #0071B80D;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+
+
+.about-us-philosophy-page-right-section-content h2 {
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 45px;
+}
+
+.about-us-philosophy-page-right-section-content p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.our-services-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.our-services-boxe {
+  display: flex;
+  gap: 20px;
+}
+
+.number-circle {
+  min-width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #0071BC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.about-us-philosophy-page-right-section-quote {
+  display: inline-block; /* shrink to fit content */
+  border: #0071B8 3px solid;
+  padding: 10px;
+  margin: 40px auto; /* auto centers the block */
+  border-radius: 10px;
+  background-color: #f4f9fc;
+  text-align: center;
+  border-radius: 30px;
+  border-left: none;
+  border-right: none;
+}
+
+.about-us-philosophy-page-right-section-quote-wrapper {
+  text-align: center; /* centers the inline-block div inside */
+}

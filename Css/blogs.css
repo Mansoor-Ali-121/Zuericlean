@@ -9,10 +9,25 @@
   line-height: 45px;
 }
 
-/* Ensure swiper container allows overflow for buttons */
-swiper-container {
+.carousel-wrapper {
   position: relative;
-  overflow: visible !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.carousel-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.blog-card-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  /* Remove gap and use margin on cards */
 }
 
 .blog-card {
@@ -49,9 +64,7 @@ swiper-container {
   text-align: left;
 }
 
-/* Swiper navigation buttons styled exactly like your carousel-btn */
-swiper-container::part(button-prev),
-swiper-container::part(button-next) {
+.carousel-btn {
   background-color: #0071b8;
   color: white;
   border: none;
@@ -60,27 +73,12 @@ swiper-container::part(button-next) {
   height: 52px; /* fixed height */
   cursor: pointer;
   border-radius: 50%; /* makes it a circle */
-  z-index: 20;
+  z-index: 10;
 
   padding: 0; /* remove padding */
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 }
 
-/* Position buttons on left and right, pushed further outside */
-swiper-container::part(button-prev) {
-  left: -40px;
-}
-
-swiper-container::part(button-next) {
-  right: -40px;
-}
-
-/* Disabled state */
-swiper-container::part(button-prev)[disabled],
-swiper-container::part(button-next)[disabled] {
+.carousel-btn:disabled {
   opacity: 0.3;
   cursor: default;
 }
@@ -96,17 +94,7 @@ swiper-container::part(button-next)[disabled] {
     flex: 0 0 calc(33.33% - 15px); /* 3 cards per row */
     margin-right: 15px;
   }
-
-  swiper-container::part(button-prev),
-  swiper-container::part(button-next) {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    left: -25px;
-    right: -25px;
-  }
 }
-
 @media (max-width: 768px) {
   .blogs-section {
     padding: 25px 0;
@@ -142,9 +130,7 @@ swiper-container::part(button-next)[disabled] {
     margin: 10px;
   }
 
-  /* Buttons visible and positioned on mobile */
-  swiper-container::part(button-prev),
-  swiper-container::part(button-next) {
+  .carousel-btn {
     display: flex !important; /* Force visible */
     align-items: center;
     justify-content: center;
@@ -154,18 +140,18 @@ swiper-container::part(button-next)[disabled] {
     z-index: 100;
     width: 40px;
     height: 40px;
+    /* background: rgba(0, 0, 0, 0.5);
+    color: white; */
     border: none;
     border-radius: 50%;
     cursor: pointer;
-    left: 5px;
-    right: 5px;
   }
 
-  swiper-container::part(button-prev) {
+  .carousel-btn.prev {
     left: 5px; /* Left side arrow */
   }
 
-  swiper-container::part(button-next) {
+  .carousel-btn.next {
     right: 5px; /* Right side arrow */
   }
 

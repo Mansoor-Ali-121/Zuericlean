@@ -1,0 +1,56 @@
+.about-us-our-team-page-main-section {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 35px;
+    /* background-color: #0071B80D; */
+    background-color: #0071B80D;
+    gap: 74px;
+}
+
+.team-box {
+    background-color: #0071B80D;
+    width: 450px;
+    /* height: 400px; */
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.team-box h3{
+    font-size: 20px;
+    color: #0071B8;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 15px;
+}
+.team-box a:hover{
+    text-decoration: underline;
+    color: #0071B8;
+}
+.role{
+    margin-bottom: none;
+}
+.box-1 {
+    border: 5px;
+    /* border-style: dashed; */
+    border-color: #0071B8;
+    border-left-style: dashed;
+    border-right-style: dashed;
+
+}
+
+.center-box {
+    background-color: none;
+}
+
+.box-3 {
+    border: 5px;
+    /* border-style: dashed; */
+    border-color: #0071B8;
+    border-top-style: dashed;
+    border-bottom-style: dashed;
+
+}
