@@ -1,0 +1,92 @@
+.imprint-services-provided-section {
+    display: flex;
+    gap: 60px;
+    padding: 70px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    background-color: #0071B80D;
+}
+
+.imprint-services-provided-section h2 {
+    font-weight: 500;
+    font-size: 48px;
+}
+
+.imprint-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    flex-direction: column;
+}
+
+.imprint-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+}
+
+.imprint-icon {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    flex-direction: column;
+}
+
+.icon-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 20px;
+}
+
+.icon-circle {
+    background-color: #0071B8;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-circle i {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.icon-block p,
+.icon-block a {
+    margin: 0;
+    font-size: 16px;
+    color: #111;
+    text-decoration: none;
+}
+
+.icon-block a:hover {
+    text-decoration: underline;
+}
+
+.imprint-person {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.imprint-person a {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+.imprint-person a:hover {
+    text-decoration: underline;
+}
+.imprint-title {
+    font-weight: 300;
+    font-size: 27px;
+}

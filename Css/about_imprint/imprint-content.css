@@ -1,0 +1,19 @@
+.imprint-content-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 65px;
+}
+/* .imprint-content-section{
+    width: 1300px;
+} */
+ h2{
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+}
+ h3{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 45px;
+}
