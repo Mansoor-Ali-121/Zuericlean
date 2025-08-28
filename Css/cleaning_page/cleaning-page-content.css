@@ -1,0 +1,118 @@
+.cleaning-page-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.cleaning-page-section-left-section {
+    padding: 40px;
+    width: 70%;
+}
+
+.cleaning-page-section h3 {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 45px;
+}
+
+.cleaning-page-img img{
+    width: 100%;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/* Sidebar */
+.cleaning-page-section-right-section {
+    width: 30%;
+    padding: 40px;
+}
+
+.cleaning-page-section-right-section h3 {
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 45px;
+}
+
+.cleaning-page-section-right-section-sidebar {
+    padding: 40px;
+    background-color: #0071b80d;
+    border-radius: 10px;
+    border: #0071B8 1px solid;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 10%;
+}
+
+/* .latest-blogs-section-sidebar .sidebar-card{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+} */
+.cleaning-page-section-right-section-sidebar .sidebar-card ul{
+    padding: 20px;
+    margin-bottom: 20px;
+ }
+ .cleaning-page-section-right-section-sidebar .sidebar-card ul li {
+    background-color: #ffffff0d;
+    padding: 10px;
+    background-color: #fff ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cleaning-page-section-right-section-sidebar .sidebar-card ul li:hover {
+    background-color: #0071B8;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+.cleaning-page-section-right-section-sidebar .sidebar-card ul li:hover a{
+    color: #fff;
+    transition: color 0.3s ease;
+}
+.cleaning-page-section-right-section-sidebar h2{
+    font-size: 17.94px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #000000;
+}
+.blogs-details-page-section-right-section-sidebar span{
+    font-size: 15px;
+    font-weight: 600;
+
+}
+
+
+
+.cleaning-page-handover-icon .icon-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.cleaning-page-handover-icon  .icon-circle {
+    background-color: #0071B8;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cleaning-page-handover-icon .icon-circle  {
+    color: #ffffff;
+    font-size: 18px;
+}
+

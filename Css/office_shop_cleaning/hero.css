@@ -11,6 +11,14 @@
     overflow: hidden;
 }
 
+.hero-section.reversed {
+    flex-direction: row-reverse;
+}
+
+.hero-section.reversed img {
+    transform: scaleX(-1)
+}
+
 .hero-overlay {
     width: 42%;
     height: 100%;
@@ -34,7 +42,7 @@
     color: white;
     z-index: 2;
     max-width: 500px;
-    margin-left: 40px;
+    margin-left: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
