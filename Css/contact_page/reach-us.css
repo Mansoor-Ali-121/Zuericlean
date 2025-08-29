@@ -42,3 +42,6 @@ hr{
     border: 1px solid #000000;
     
 }
+#contact-map iframe{
+  border-radius: 20px;
+}

@@ -1,173 +1,157 @@
-.blogs-section {
-  padding: 40px;
-  text-align: center;
-  height: 525px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+  margin: 45px auto;
 }
-.blogs-section h3 {
-  font-weight: 600;
+
+h3 {
   font-size: 35px;
-  line-height: 45px;
-}
-
-.carousel-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.carousel-container {
-  overflow: hidden;
-  width: 100%;
-}
-
-.blog-card-container {
-  display: flex;
-  transition: transform 0.5s ease;
-  /* Remove gap and use margin on cards */
-}
-
-.blog-card {
-  flex: 0 0 calc(25% - 15px); /* 15px is approx margin to adjust */
-  box-sizing: border-box;
-  padding: 10px;
-  border-radius: 8px;
-  margin-right: 20px; /* space between cards */
-}
-
-/* Remove margin from last card so no extra space on right */
-.blog-card:last-child {
-  margin-right: 0;
-}
-
-.blog-card img {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-  border-radius: 14px;
-}
-
-.blog-card h4 {
-  font-size: 16px;
-  font-weight: bold;
-  margin: 10px 0 5px;
-  text-align: left;
-}
-
-.blog-card p {
-  font-size: 14px;
+  font-weight: 600;
   color: #333;
-  line-height: 1.4;
-  text-align: left;
+  /* text-align: center; */
+  margin-bottom: 20px;
+}
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
 }
 
-.carousel-btn {
-  background-color: #0071b8;
-  color: white;
+.card {
+  border-radius: 25px;
+  background-color: #fff;
+}
+
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 14px;
+}
+
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 0;
+}
+
+.overlay {
+  position: relative;
+  width: 100%;
+  /* background-color: #4070f4; */
+  border-radius: 25px 25px 25px 25px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  /* height: 220px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: hidden; /* <-- prevents image from breaking radius */
+}
+
+.overlay-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+
+}
+
+
+
+.overlay::after {
+  /* border-radius: 0 25px 0 0; */
+  background-color: #fff;
+}
+
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+  z-index: 1;
+}
+
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070f4;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+  margin-top: 10px;
+}
+
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.button {
   border: none;
-  font-size: 20px;
-  width: 55px; /* fixed width */
-  height: 52px; /* fixed height */
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #4070f4;
+  border-radius: 6px;
+  margin: 14px;
   cursor: pointer;
-  border-radius: 50%; /* makes it a circle */
-  z-index: 10;
-
-  padding: 0; /* remove padding */
+  transition: all 0.3s ease;
 }
 
-.carousel-btn:disabled {
-  opacity: 0.3;
-  cursor: default;
+.button:hover {
+  background: #265df2;
 }
 
-/* ---------- 1024px and below ---------- */
-@media (max-width: 1024px) {
-  .blogs-section {
-    height: auto;
-    padding: 30px;
-  }
-
-  .blog-card {
-    flex: 0 0 calc(33.33% - 15px); /* 3 cards per row */
-    margin-right: 15px;
-  }
+.swiper-navBtn {
+  color: #6e93f7;
+  transition: color 0.3s ease;
 }
-@media (max-width: 768px) {
-  .blogs-section {
-    padding: 25px 0;
-  }
 
-  .carousel-container {
-    overflow-x: hidden; /* Scrollbar chupane ke liye */
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
-  }
+.swiper-navBtn:hover {
+  color: #4070f4;
+}
 
-  .carousel-container::-webkit-scrollbar {
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 38px;
+}
+
+.swiper-button-next {
+  right: 0;
+}
+
+.swiper-button-prev {
+  left: 0;
+}
+
+.swiper-pagination-bullet {
+  background-color: #6e93f7;
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #4070f4;
+}
+
+@media screen and (max-width: 768px) {
+  .slide-content {
+    margin: 0 10px;
+  }
+  .swiper-navBtn {
     display: none;
-  }
-
-  .blog-card-container {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 0; /* Ab cards ke beech koi gap nahi hoga */
-    padding: 0 16px; /* Left aur Right se space dega */
-    transition: transform 0.5s ease-in-out;
-  }
-
-  .blog-card {
-    /* Sirf ek card dikhane ke liye width 100% kar dein */
-    flex: 0 0 100%;
-    scroll-snap-align: center;
-    width: 80;
-    padding: 52px;
-    outline: 1px solid #0071b8;
-    border-radius: 14px;
-    margin: 10px;
-  }
-
-  .carousel-btn {
-    display: flex !important; /* Force visible */
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 100;
-    width: 40px;
-    height: 40px;
-    /* background: rgba(0, 0, 0, 0.5);
-    color: white; */
-    border: none;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-
-  .carousel-btn.prev {
-    left: 5px; /* Left side arrow */
-  }
-
-  .carousel-btn.next {
-    right: 5px; /* Right side arrow */
-  }
-
-  /* Optional: Mobile image adjustments */
-  .carousel-item img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  .blog-card img {
-    height: 140px;
-  }
-  .blog-card h4 {
-    text-align: center;
-  }
-  .blog-card p {
-    text-align: center;
   }
 }

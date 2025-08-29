@@ -31,6 +31,9 @@
   <link rel="stylesheet" href="./Css/blogs.css" />
   <link rel="stylesheet" href="./Css/footer.css" />
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+
+
   <!-- Our services page  -->
   <!-- <link rel="stylesheet" href="./Css/Our_services/hero-section.css">
     <link rel="stylesheet" href="./Css/Our_services/all-services.css"> -->
@@ -117,18 +120,75 @@
 
       <!-- Full Navbar Collapse Section -->
       <div class="collapse navbar-collapse justify-content-between mt-2 mt-lg-0" id="navbarNav">
-        <!-- Left nav links -->
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Locations</a></li>
+       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+          <!-- Home (No Dropdown) -->
           <li class="nav-item">
-            <a class="nav-link" href=".//services.html">Cleaning Services</a>
+            <a class="nav-link text-light" href="./index.html">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Cleaning Handover Guarantee</a>
+
+          <!-- About (Dropdown)  -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle-white text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./about_us.html">About Us</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <!-- Sub Services -->
+              <li><a class="dropdown-item" href="./about_us_storyline.html">Our Story Line</a></li>
+              <li><a class="dropdown-item" href="./about_us_philosophy.html">Philiosophy</a></li>
+              <li><a class="dropdown-item" href="./about_us_responsibility.html">Social Responsibility</a></li>
+              <li><a class="dropdown-item" href="./about_imprint.html">Imprint</a></li>
+              <li><a class="dropdown-item" href="./about_us_our_team.html">Our Team</a></li>
+            </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+
+
+          <!-- Locations (Dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle-white text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Locations
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Dubai</a></li>
+              <li><a class="dropdown-item" href="#">Abu Dhabi</a></li>
+            </ul>
+          </li>
+
+          <!-- Cleaning Services (Dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle-white text-light" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Cleaning Services
+            </a>
+            <ul class="dropdown-menu">
+              <!-- All Services -->
+              <li><a class="dropdown-item" href="./services.html">All Services</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <!-- Sub Services -->
+              <li><a class="dropdown-item" href="#">Residential Cleaning</a></li>
+              <li><a class="dropdown-item" href="#">Office Cleaning</a></li>
+            </ul>
+          </li>
+
+
+          <!-- Cleaning Handover Guarantee (Dropdown) -->
+           <li class="nav-item">
+            <a class="nav-link text-light" href="./cleaning_handover.html">Cleaning Handover Guarantee</a>
+          </li>
+
+          <!-- Contact (Dropdown) -->
+         <li class="nav-item">
+            <a class="nav-link text-light" href="./contact.html">Contact Us</a>
+          </li>
+
         </ul>
 
         <!-- Right Side: Language & Button (Desktop) -->
@@ -164,13 +224,13 @@
       </div>
     </div>
   </nav>
-  
+
   <!-- White Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-white px-4 py-3 shadow-sm fixed-top" id="navbar-white"
+  <nav class="navbar navbar-expand-lg navbar-white px-4 py-3 shadow-sm fixed-top white-navbar" id="navbar-white"
     style="display: none;">
     <div class="container-fluid">
       <!-- Logo -->
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand white-navbar-logo" href="#">
         <img src="./Images/logo.png" alt="Züri Clean" style="height: 50px" />
       </a>
       <!-- Mobile Header -->
@@ -187,8 +247,7 @@
 
         <!-- Language Dropdown -->
         <div class="dropdown">
-          <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button"
-            data-bs-toggle="dropdown">
+          <button class="btn dropdown-toggle d-flex align-items-center" type="button" data-bs-toggle="dropdown">
             <img src="https://flagcdn.com/ch.svg" class="flag-icon me-2" /> Ch
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
@@ -205,19 +264,82 @@
       <!-- Desktop Navbar -->
       <div class="collapse navbar-collapse justify-content-between mt-2 mt-lg-0" id="navbarWhiteCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link text-dark" href="./index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#">About</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#">Locations</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="./services.html">Cleaning Services<a><li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#">Cleaning Handover Guarantee</a></li>
-          <li class="nav-item"><a class="nav-link text-dark" href="#">Contact</a></li>
+
+          <!-- Home (No Dropdown) -->
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./index.html">Home</a>
+          </li>
+
+          <!-- About (Dropdown)  -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle-white text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              About
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./about_us.html">About Us</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <!-- Sub Services -->
+              <li><a class="dropdown-item" href="./about_us_storyline.html">Our Story Line</a></li>
+              <li><a class="dropdown-item" href="./about_us_philosophy.html">Philiosophy</a></li>
+              <li><a class="dropdown-item" href="./about_us_responsibility.html">Social Responsibility</a></li>
+              <li><a class="dropdown-item" href="./about_imprint.html">Imprint</a></li>
+              <li><a class="dropdown-item" href="./about_us_our_team.html">Our Team</a></li>
+            </ul>
+          </li>
+
+
+          <!-- Locations (Dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle-white text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Locations
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Dubai</a></li>
+              <li><a class="dropdown-item" href="#">Abu Dhabi</a></li>
+            </ul>
+          </li>
+
+          <!-- Cleaning Services (Dropdown) -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle-white text-dark" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Cleaning Services
+            </a>
+            <ul class="dropdown-menu">
+              <!-- All Services -->
+              <li><a class="dropdown-item" href="./services.html">All Services</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <!-- Sub Services -->
+              <li><a class="dropdown-item" href="#">Residential Cleaning</a></li>
+              <li><a class="dropdown-item" href="#">Office Cleaning</a></li>
+            </ul>
+          </li>
+
+
+          <!-- Cleaning Handover Guarantee (Dropdown) -->
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./cleaning_handover.html">Cleaning Handover Guarantee</a>
+          </li>
+
+          <!-- Contact (Dropdown) -->
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="./contact.html">Contact Us</a>
+          </li>
+
         </ul>
+
 
         <!-- Right Section -->
         <div class="d-none d-lg-flex align-items-center gap-3">
           <div class="dropdown">
-            <button class="btn btn-outline-secondary dropdown-toggle d-flex align-items-center" type="button"
-              data-bs-toggle="dropdown">
+            <button class="btn dropdown-toggle d-flex align-items-center white-language-icon  white-navbar-dropdown"
+              type="button" data-bs-toggle="dropdown">
               <img src="https://flagcdn.com/ch.svg" class="flag-icon me-2" /> Ch
             </button>
             <ul class="dropdown-menu dropdown-menu-end">
@@ -1222,79 +1344,138 @@
   </section>
 
   <!-- Blogs -->
-  <section class="blogs-section">
-    <h4>
-      Recent
-      <span class="txt-background-color"> Blogs </span>
-    </h4>
+  <div class="slide-container swiper">
+    <h3>Recent <span class="txt-background-color">Blogs</span></h3>
+    <div class="slide-content">
+      <div class="card-wrapper swiper-wrapper">
 
-    <div class="carousel-wrapper">
-      <button class="carousel-btn prev">&#10094;</button>
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="overlay">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png"
+                alt="Avatar" class="overlay-img" />
+            </div>
+          </div>
 
-      <div class="carousel-container">
-        <div class="blog-card-container">
-          <div class="blog-card">
-            <img src="./Images/blogs-images/blog1.png" alt="Blog 1" />
-            <h4>
-              Say Goodbye to Dust – and Hello to 20% Off! | ZueriClean...
-            </h4>
-            <p>
-              Book expert cleaning services in Zurich, Zug & nearby areas with
-              ZueriClean. End-of-tenancy, deep cleaning, carpet & office
-              cleaning. Get 20% OFF today – no code needed!
+          <div class="card-content">
+            <h2 class="name">Mohamed Yousef</h2>
+            <p class="description">
+              The lorem text the section that contains header with having open
+              functionality. Lorem dolor sit amet consectetur adipisicing elit.
             </p>
+            <button class="btn-background-color">View More</button>
           </div>
-          <div class="blog-card">
-            <img src="./Images/blogs-images/blog2.png" alt="Blog 2" />
-            <h4>Legal and Rental Agreement Considerations</h4>
-            <p>
-              Learn key legal and rental agreement tips in Switzerland,
-              including tenant rights, cleaning obligations, and landlord
-              protections. Stay informed and avoid disputes!
-            </p>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="overlay">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png"
+                alt="Avatar" class="overlay-img" />
+            </div>
           </div>
-          <div class="blog-card">
-            <img src="./Images/blogs-images/blog3.png" alt="Blog 3" />
-            <h4>Duration and Scheduling of Move-Out Cleaning</h4>
-            <p>
-              Learn how scheduling and duration impact move-out cleaning
-              success. Ensure a stress-free handover and reclaim your deposit
-              with these essential tips.
+
+          <div class="card-content">
+            <h2 class="name">Mohamed Yousef</h2>
+            <p class="description">
+              The lorem text the section that contains header with having open
+              functionality. Lorem dolor sit amet consectetur adipisicing elit.
             </p>
+            <button class="btn-background-color">View More</button>
+
           </div>
-          <div class="blog-card">
-            <img src="./Images/blogs-images/blog4.png" alt="Blog 4" />
-            <h4>Fast Apartment Cleaning: How Long It Truly Takes....</h4>
-            <p>
-              Worried about apartment clean time? Our fast guide helps! End of
-              tenancy or just a refresh, know how long it takes. Zuericlean
-              for easy booking & expert sofa cleaning.
-            </p>
+        </div>
+
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="overlay">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png"
+                alt="Avatar" class="overlay-img" />
+            </div>
           </div>
-          <div class="blog-card">
-            <img src="./Images/blogs-images/blog3.png" alt="Blog 3" />
-            <h4>Duration and Scheduling of Move-Out Cleaning</h4>
-            <p>
-              Learn how scheduling and duration impact move-out cleaning
-              success. Ensure a stress-free handover and reclaim your deposit
-              with these essential tips.
+
+          <div class="card-content">
+            <h2 class="name">Mohamed Yousef</h2>
+            <p class="description">
+              The lorem text the section that contains header with having open
+              functionality. Lorem dolor sit amet consectetur adipisicing elit.
             </p>
+            <button class="btn-background-color">View More</button>
+
           </div>
-          <div class="blog-card">
-            <img src="./Images/blogs-images/blog3.png" alt="Blog 3" />
-            <h4>Duration and Scheduling of Move-Out Cleaning</h4>
-            <p>
-              Learn how scheduling and duration impact move-out cleaning
-              success. Ensure a stress-free handover and reclaim your deposit
-              with these essential tips.
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="overlay">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png"
+                alt="Avatar" class="overlay-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name">Mohamed Yousef</h2>
+            <p class="description">
+              The lorem text the section that contains header with having open
+              functionality. Lorem dolor sit amet consectetur adipisicing elit.
             </p>
+            <button class="btn-background-color">View More</button>
+
+          </div>
+        </div>
+
+        <!-- new -->
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="overlay">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png"
+                alt="Avatar" class="overlay-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name">Mohamed Yousef</h2>
+            <p class="description">
+              The lorem text the section that contains header with having open
+              functionality. Lorem dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-background-color">View More</button>
+
+          </div>
+        </div>
+
+        <div class="card swiper-slide">
+          <div class="image-content">
+            <div class="overlay">
+              <img
+                src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxivAs4UknzmDfLBXGMxQkayiZDhR2ftB4jcIV7LEnIEStiUyMygioZnbLXCAND-I_xWQpVp0jv-dv9NVNbuKn4sNpXYtLIJk2-IOdWQNpC2Ldapnljifu0pnQqAWU848Ja4lT9ugQex-nwECEh3a96GXwiRXlnGEE6FFF_tKm66IGe3fzmLaVIoNL/s1600/img_avatar.png"
+                alt="Avatar" class="overlay-img" />
+            </div>
+          </div>
+
+          <div class="card-content">
+            <h2 class="name">Mohamed Yousef</h2>
+            <p class="description">
+              The lorem text the section that contains header with having open
+              functionality. Lorem dolor sit amet consectetur adipisicing elit.
+            </p>
+            <button class="btn-background-color">View More</button>
+
           </div>
         </div>
       </div>
-
-      <button class="carousel-btn next">&#10095;</button>
     </div>
-  </section>
+
+    <div class="swiper-button-next swiper-navBtn"></div>
+    <div class="swiper-button-prev swiper-navBtn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
 
   <!-- Map  -->
   <!-- contact-map -->
@@ -1382,38 +1563,71 @@
 
   <!-- Carousel  -->
   <script src="./js/carousel.js"></script>
-<script>
-  function toggleNavbar() {
-    const whiteNavbar = document.getElementById("navbar-white");
-    const blueNavbar = document.getElementById("navbar-blue");
-    const heroSection = document.querySelector(".hero-section");
 
-    if (!heroSection) return;
+  <!-- navbar -->
+  <script>
 
-    const heroBottom = heroSection.offsetTop + heroSection.offsetHeight;
-    const cursorY = window._cursorY || 0; // last cursor Y position stored
+    window.addEventListener("scroll", function () {
+      const hero = document.querySelector(".hero-section");
+      const scrollMenu = document.getElementById("navbar-white");
 
-    // Condition: cursor below hero OR page scrolled beyond hero
-    if (cursorY > heroBottom || window.scrollY > heroBottom) {
-      whiteNavbar.style.display = "block";
-      blueNavbar.style.display = "none";
-    } else {
-      whiteNavbar.style.display = "none";
-      blueNavbar.style.display = "block";
-    }
-  }
+      if (window.scrollY > hero.offsetHeight) {
+        scrollMenu.style.display = "block";
+      } else {
+        scrollMenu.style.display = "none";
+      }
+    });
 
-  // Store cursor position on mousemove
-  window.addEventListener("mousemove", function (event) {
-    window._cursorY = event.clientY + window.scrollY;
-    toggleNavbar();
-  });
+    // Store cursor position on mousemove
+    // window.addEventListener("mousemove", function (event) {
+    //   window._cursorY = event.clientY + window.scrollY;
+    //   toggleNavbar();
+    // });
 
-  // Initial check on page load
-  toggleNavbar();
-</script>
+    // Initial check on page load
+    // toggleNavbar();
+  </script>
 
+  <!-- Swiper JS -->
+  <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".slide-content", {
+      slidesPerView: 3,
+      spaceBetween: 25,
+      autoplay: {
+        delay: 1000, // slide will change every 3 seconds
+        disableOnInteraction: false,
+      },
+      loop: true,
+      centerSlide: true,
+      fade: true,
+      grabCursor: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 1,
+        },
+        520: {
+          slidesPerView: 2,
+        },
+        950: {
+          slidesPerView: 3,
+        },
+      },
+    });
+  </script>
 
+  <!-- JavaScript -->
+  <!--Uncomment this line-->
+  <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
 
 
   <!-- Bootstrap JS Bundle -->

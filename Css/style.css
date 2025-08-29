@@ -329,7 +329,16 @@ body {
 
 /* ========== Responsive ========== */
 
-
+.white-navbar-dropdown{
+  border: #0071b8 solid 2px;
+}
+.white-navbar-dropdown:hover{
+  background-color: #0071B8;
+  color: white;
+}
+.white-navbar{
+  border-bottom: #0071b8 solid 2px;
+}
 /* Tablet */
 @media (max-width: 1024px) {
   .header-title {
@@ -360,6 +369,7 @@ body {
     height: 25px;
     font-size: 12px;
   }
+ 
 }
 
 /* Mobile */
@@ -403,6 +413,9 @@ body {
   .dropdown-toggle {
     max-width: 100%;
   }
+   .white-navbar-logo{
+    display: none;
+  }
 }
 
 /* Very Small Devices */
@@ -426,6 +439,9 @@ body {
   }
 
   .header-section img {
+    display: none;
+  }
+   .white-navbar-logo{
     display: none;
   }
 }
